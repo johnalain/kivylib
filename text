@@ -1,0 +1,34 @@
+"""BoxLayoutExample:
+
+<BoxLayoutExample>:
+    orientation:"vertical"
+    Button:
+        text:"A"
+        size_hint:.8, .5
+    Button:
+        text:"b"
+        #size:"48dp", "48dp"
+        size_hint:None,None
+        width:"150dp"
+        height:"150dp"
+#i can rezise button or label by comment size and use above code
+    Label:
+        text:"c""""
+
+MainWidget:
+<MainWidget>:
+    Button:
+        text: "michel"
+        size:"60dp", "60dp"
+        pos:"100dp", "300dp"
+        color:0,0,1,1
+    Button:
+        text: "rita"
+        size:"60dp", "60dp"
+        pos:"100dp", "400dp"
+        color:0,0,1,1
+    Label:
+        text: "hello"
+        size:"100dp", "80dp"
+        pos:"200dp", "400dp"
+        color:0,1,0,1

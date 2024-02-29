@@ -1,25 +1,25 @@
 BoxLayoutExample:
-
 <BoxLayoutExample>:
-    orientation:"vertical"
+    orientation:"horizontal"
     Button:
-        text:"A"
-        size_hint:.8, .5
+        text: "a"
+        #size: "100dp", "40dp" doesn't work instead use:
+        #size_hint:is proportional take 40% ,5% "
+        size_hint:1, .5 
     Button:
-        text:"b"
-        size:"48dp", "48"
-        size_hint:None,None
-
-    Label:
-        text:"c"
-<MainWidget>:
+        text: "b"
+        size_hint:1, 2
+        #size of "b" will be twice "a"
     Button:
-        text: "michel"
-        size:"60dp", "60dp"
-        pos:"100dp", "300dp"
-        color:0,0,1,1
-    Label:
-        text: "hello"
-        size:"100dp", "80dp"
-        pos:"200dp", "400dp"
-        color:1,0,0,1
+        text: "c"
+        #size: "50dp", "40dp"
+        #size_hint:.4, None
+        #i can specify width and height seperatly
+        #width: "150dp"
+        #i can specify width in size_hint and height seperatly
+        #height: "150dp"
+        #will take size into consideration
+        #x, center_x,right
+        #y, center_x,top
+        #pos_hint:{"x":.5 }
+        pos_hint:{"y":.5 }
